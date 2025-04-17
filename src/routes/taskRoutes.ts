@@ -10,7 +10,6 @@ router.post('/columns/:columnId/tasks', createTask as RequestHandler);
 
 router.delete('/:taskId', deleteTask as RequestHandler);
 
-// Route đặc biệt để xử lý kéo thả task
 router.put('/:taskId/move', moveTask as RequestHandler);
 
 export default router;
